@@ -9,7 +9,7 @@ namespace MvcCoreElastiCacheAWS.Services
     public class ServiceAWSCache
     {
         private IDistributedCache cache;
-        public ServiceAWSCache()
+        public ServiceAWSCache(IDistributedCache cache)
         {
             this.cache = cache;
         }
