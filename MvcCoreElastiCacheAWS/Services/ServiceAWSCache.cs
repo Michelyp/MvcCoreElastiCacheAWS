@@ -41,6 +41,7 @@ namespace MvcCoreElastiCacheAWS.Services
                 string jsonCoches = JsonConvert.SerializeObject(coches);
                 //Almacenamos la coleccion dentro de cache redis 
                 //indicaremos que los datos duran 30 minutos
+                await this.cache.StringSetAsync("cochesfavoritos", jsonCoches, TimeSpan.FromMinutes(30));
 
             }
         }

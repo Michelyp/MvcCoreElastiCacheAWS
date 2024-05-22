@@ -46,7 +46,7 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new {  id=item.IdCoche  }) |
-                    @Html.ActionLink("Seleccionar", "SeleccionarFavorito", new { id = item.IdCoche })
+                    @Html.ActionLink("Seleccionar", "SeleccionarFavorito", new { idcoche = item.IdCoche })
             </td>
             <td>
                 <a asp-action="SeleccionarFavorito" asp-controller="Coches" asp-route-idcoche="@item.IdCoche">SELECCIONAR</a>
